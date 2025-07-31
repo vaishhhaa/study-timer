@@ -1,0 +1,158 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    color: #4a4a4a;
+  }
+  
+  #new-timer-form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  #new-timer-form input, #new-timer-form button {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  #new-timer-form button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #new-timer-form button:hover {
+    background-color: #45a049;
+  }
+  
+  #timers, #sessions {
+    max-width: 700px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .timer, .session {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+  }
+  
+  .timer strong {
+    font-size: 18px;
+  }
+  
+  .timer button {
+    margin-top: 10px;
+    margin-right: 5px;
+    padding: 8px 16px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .timer button:hover {
+    background-color: #0056b3;
+  }
+  
+  .timer button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .session {
+    font-size: 15px;
+    background-color: #e6f7ff;
+  }
+
+  body.dark-mode {
+    background-color: #181818;
+    color: #e0e0e0;
+  }
+  
+  body.dark-mode #new-timer-form {
+    background: #242424;
+  }
+  
+  body.dark-mode .timer, body.dark-mode .session {
+    background: #2c2c2c;
+  }
+  
+  body.dark-mode .timer button:hover {
+    background-color: #444;
+  }
+
+.timer.complete {
+    animation: fadeIn 1s ease forwards;
+    background-color: #d4edda;
+}
+
+/* Add to CSS */
+.progress-container {
+    position: relative;
+    width: 100%;
+    height: 20px; /* Increased height for better visibility */
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    margin: 10px 0;
+    overflow: hidden;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 10px;
+    transition: width 0.5s ease;
+  }
+  
+  .progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #333;
+    font-weight: bold;
+    font-size: 12px;
+    text-shadow: 0 0 2px rgba(255,255,255,0.5);
+    pointer-events: none;
+  }
+  
+  #theme-toggle{
+    font-size: 2rem;
+    background: transparent;
+    border: none;
+  }
+
+  body.dark-mode #theme-toggle, body.dark-mode .h1 , body.dark-mode h2  {
+    color: white;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .timer.complete {
+    animation: fadeIn 1s ease forwards;
+    background-color: #d4edda;
+  }

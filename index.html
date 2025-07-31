@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GoalTimer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <button id="theme-toggle" style="position: fixed; top: 10px; right: 10px;">
+        <i id="theme-icon" class="fa-solid fa-moon"></i>
+      </button>
+  <h1 class="h1">📚 Goal Timer</h1>
+
+  <div id="new-timer-form">
+    <input type="text" id="title" placeholder="Subject Title">
+    <input type="number" id="hours" placeholder="Hours" min="0">
+    <input type="number" id="minutes" placeholder="Minutes" min="0" max="59">
+    <button id="add-timer">Add Timer</button>
+  </div>
+
+  <h2 class="h2">🔥 Active Timers</h2>
+  <div id="timers"></div>
+
+  <h2 class="h2">📖 Past Sessions</h2>
+  <div id="sessions"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
